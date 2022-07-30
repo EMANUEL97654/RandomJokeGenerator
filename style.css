@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(199, 103, 24);
+    color:hsl(88, 52%, 56%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.delivery-title,.setup-title{
+    color: crimson;
+}
+
+.container{
+    position: relative;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 2rem;
+    background-color: rgb(50, 79, 82);
+}
+
+.container-btn{
+    display: flex;
+}
+
+
+.title{
+    color: #a141ad;
+    text-align: center;
+    padding: 2rem 1rem 0.5rem 1rem;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    border: none;
+    padding: 1.3rem;
+    border-radius: 50%;
+    box-shadow: -2px -2px 30px -2px red
+}
+
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    margin-left: 30px;
+    border: none;
+    padding: 1.3rem;
+    border-radius: 50%;
+    box-shadow: -2px -2px 30px -2px blue;
+}
+
+.btn:hover{
+    cursor:pointer;
+    animation-name: giro;
+    animation-timing-function: cubic-bezier(1,1,1,.99);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.btn2:hover{
+    cursor:pointer;
+    animation-name: giro;
+    animation-timing-function: cubic-bezier(1,1,1,.99);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes giro{
+    from{transform: rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin: auto;
+        padding: 0;
+    }
+
+    .joke{
+        font-size: 20px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+}
